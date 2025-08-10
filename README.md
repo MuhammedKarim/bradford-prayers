@@ -1,6 +1,6 @@
 # 📿 Masjid Prayer Timetable Display
 
-🔴 **Live Status Website:** [https://muhammedkarim.github.io/man-main-2](https://muhammedkarim.github.io/man-main-2)  
+🔴 **Live Status Website:** [https://muhammedkarim.github.io/bradford-prayers](https://muhammedkarim.github.io/bradford-prayers)  
 (Click to view the live display being used in the masjid.)
 
 ---
