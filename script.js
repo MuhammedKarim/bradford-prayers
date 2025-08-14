@@ -418,7 +418,7 @@ function initPrayerTimes() {
   loadPrayerTimes();
   fetchAnnouncement();
   preloadAndCheckPosters();
-  checkLiveStatusAndToggleOverlay();
+  // checkLiveStatusAndToggleOverlay();
   
   setInterval(updateClock, 1000);
   setInterval(loadPrayerTimes, 1000);
@@ -426,6 +426,6 @@ function initPrayerTimes() {
   setInterval(fetchAnnouncement, 60000);
   setInterval(fetchPrayerTimes, 300000);
   setInterval(refreshPosters, 300000);
-  setInterval(checkLiveStatusAndToggleOverlay, 5000);
+  // setInterval(checkLiveStatusAndToggleOverlay, 5000);
   setInterval(checkVersionAndReload, 60000);
 }
