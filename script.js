@@ -143,10 +143,12 @@ function initPrayerTimes() {
       if (diff > 0) {
         el.textContent = diff;
         el.classList.add('countdown');
+        stopPosterCycle();
       } else {
         clearInterval(intervalId);
         el.classList.remove('countdown');
         loadPrayerTimes();
+        startPrayerPosterCycle();
       }
     }, 1000);
   }
