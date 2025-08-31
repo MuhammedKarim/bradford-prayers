@@ -148,7 +148,7 @@ function initPrayerTimes() {
         clearInterval(intervalId);
         el.classList.remove('countdown');
         loadPrayerTimes();
-        startPrayerPosterCycle();
+        startPosterCycle();
       }
     }, 1000);
   }
@@ -198,11 +198,11 @@ function initPrayerTimes() {
       img.onload = () => {
         posterImages.push(url);
         loaded++;
-        if (loaded === total) startPrayerPosterCycle();
+        if (loaded === total) startPosterCycle();
       };
       img.onerror = () => {
         loaded++;
-        if (loaded === total) startPrayerPosterCycle();
+        if (loaded === total) startPosterCycle();
       };
       img.src = url;
     }
@@ -213,11 +213,11 @@ function initPrayerTimes() {
       img.onload = () => {
         posterImages.push(url);
         loaded++;
-        if (loaded === total) startPrayerPosterCycle();
+        if (loaded === total) startPosterCycle();
       };
       img.onerror = () => {
         loaded++;
-        if (loaded === total) startPrayerPosterCycle();
+        if (loaded === total) startPosterCycle();
       };
       img.src = url;
     }
@@ -247,7 +247,7 @@ function initPrayerTimes() {
   }
   
   let posterCycleInterval = null;
-  function startPrayerPosterCycle() {
+  function startPosterCycle() {
     if (posterImages.length === 0 || posterCycleInterval) return;
 
     posterCycleInterval = setInterval(() => {
@@ -318,8 +318,8 @@ function initPrayerTimes() {
           stopPosterCycle();
           startKalimatPolling();
         } else {
+          startPosterCycle();
           stopKalimatPolling();
-          startPrayerPosterCycle();
         }
       })
       .catch(err => {
