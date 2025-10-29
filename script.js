@@ -171,7 +171,7 @@ function initPrayerTimes() {
   }
 
 
-  const MAX_POSTERS = 5;
+  const MAX_POSTERS = 12;
   let posterImages = [];
   let posterIndex = 0;
 
@@ -476,7 +476,7 @@ function initPrayerTimes() {
   setInterval(checkFridayDuroodOverlay, 1000);
   setInterval(fetchAnnouncement, 60000);
   setInterval(fetchPrayerTimes, 300000);
-  setInterval(refreshPosters, 300000);
+  setInterval(refreshPosters, 1800000);
   // setInterval(checkLiveStatusAndToggleOverlay, 5000);
   setInterval(checkVersionAndReload, 60000);
 }
