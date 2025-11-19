@@ -399,7 +399,8 @@ function initPrayerTimes() {
             setTimeout(() => {
               kalimatOverlay.style.display = 'none';
             }, 1500);
-            currentKalimat = null;
+            if (status.kalimat === '') currentKalimat = ''
+            else currentKalimat = null;
           };
           img.src = kalimatPath;
         } else {
