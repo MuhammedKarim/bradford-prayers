@@ -205,7 +205,7 @@ function initPrayerTimes() {
   }
 
 
-  const MAX_POSTERS = 15;
+  const MAX_POSTERS = 20;
   let posterImages = [];
   let posterIndex = 0;
 
@@ -278,7 +278,7 @@ function initPrayerTimes() {
         overlay.style.display = 'none';
         posterIndex++;
       }, 1500);
-    }, 5000);
+    }, 25000);
   }
   
   let posterCycleInterval = null;
@@ -290,7 +290,7 @@ function initPrayerTimes() {
       if (!overlay.style.display || overlay.style.display === 'none') {
         cyclePosters();
       }
-    }, 10000);
+    }, 50000);
   }
 
   function stopPosterCycle() {
