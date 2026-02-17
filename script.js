@@ -107,6 +107,7 @@ function initPrayerTimes() {
 
   function loadPrayerTimes() {
     const now = new Date();
+    const nowMs = now.getTime();
     const { todayStr, tomorrowStr } = getTodayTomorrowStr();
 
     if (!allData[todayStr] || !allData[tomorrowStr]) return;
@@ -488,7 +489,7 @@ function initPrayerTimes() {
       base.setDate(base.getDate() + 1);
     }
     base.setHours(h, m, 0, 0);
-    const start = new Date(base.getTime() + 15 * 60000);
+    const start = new Date(base.getTime() + 15 * 60000 - 86400000);
     const end = new Date(start.getTime() + 85 * 60000);
     return now >= start && now < end;
   }
