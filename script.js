@@ -205,7 +205,7 @@ function initPrayerTimes() {
   }
 
 
-  const MAX_POSTERS = 30;
+  const MAX_POSTERS = 20;
   let posterImages = [];
   let posterIndex = 0;
 
