@@ -556,7 +556,7 @@ function initPrayerTimes() {
   setInterval(checkFridayDuroodOverlay, 1000);
   setInterval(fetchAnnouncement, 60000);
   setInterval(fetchPrayerTimes, 300000);
-  setInterval(refreshPosters, 360000000);
+  setInterval(refreshPosters, 3600000);
   // setInterval(checkLiveStatusAndToggleOverlay, 5000);
   setInterval(checkVersionAndReload, 60000);
   setInterval(pollTaraweehStateAndApply, 1000);
